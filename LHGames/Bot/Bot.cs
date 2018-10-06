@@ -73,12 +73,13 @@ namespace LHGames.Bot
             {
                 playerTiles = playerTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
             }
-            
+
+            Tile closestResource = ressourceTiles[0];
             Tuple<Point, TileContent> nextMove = null;
             switch(listTitlePriority[0])
             {
                 case TileContent.House:
-                    nextMove = checkNextTile(map, destination);
+                    nextMove = checkNextTile(map, closestResource.Position);
                     break;
                 case TileContent.Lava:
                     break;
@@ -86,7 +87,7 @@ namespace LHGames.Bot
                     nextMove = checkNextTile(map,playerTiles[0].Position);
                     break;
                 case TileContent.Resource:
-                    nextMove = checkNextTile(map, destination);
+                    nextMove = checkNextTile(map, closestResource.Position);
                     break;
                 case TileContent.Shop:
                     break;
