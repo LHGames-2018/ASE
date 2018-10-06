@@ -59,6 +59,9 @@ namespace LHGames.Bot
 
             Tile closestResource = ressourceTiles[0];
 
+
+
+
             /*
             int smallestDelta = int.MaxValue;
             Tile nearTile = null;
@@ -83,7 +86,20 @@ namespace LHGames.Bot
 
             }*/
 
+            Tuple<Point, TileContent> nextMove = checkNextTile(map, closestResource);
+
+            TileContent nextTitleContent = nextMove.Item2;
+
+            if(nextMove.Item2 == TileContent.Resource)
+            {
+                instruction = AIHelper.CreateCollectAction(nextMove.Item1 - this.PlayerInfo.Position);
+            }
+            else
+            {
+                instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
+            }
   
+            
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
