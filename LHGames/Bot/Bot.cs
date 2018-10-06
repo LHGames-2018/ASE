@@ -54,11 +54,7 @@ namespace LHGames.Bot
             List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
-
-            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
-            ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
-
-            
+          
             Point destination = PlayerInfo.HouseLocation;
             if (ressourceTiles.Count != 0)
             {
@@ -71,7 +67,7 @@ namespace LHGames.Bot
 
             
 
-            Tuple<Point, TileContent> nextMove = checkNextTile(map, closestResource);
+            Tuple<Point, TileContent> nextMove = checkNextTile(map, destination);
 
             TileContent nextTitleContent = nextMove.Item2;
 
