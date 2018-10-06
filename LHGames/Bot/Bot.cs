@@ -38,6 +38,7 @@ namespace LHGames.Bot
         /// <returns>The action you wish to execute.</returns>
         static int vertical = 0;
         static int horizontal = 0;
+        static Random generateurAleatoire = new Random();
         public delegate int DistanceFromTiles(Point positionRessource, Point positionJoueur);
 
         public int TrouverDistanceEntreDeuxPoints(Point positionRessource, Point positionJoueur)
@@ -54,9 +55,14 @@ namespace LHGames.Bot
             List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
-
-            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
-            ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+          
+            Point destination = PlayerInfo.HouseLocation;
+            if (ressourceTiles.Count != 0)
+            {
+                DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
+                ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+                destination = ressourceTiles[0].Position;
+            }
 
             Tile closestResource = ressourceTiles[0];
             Tuple<Point, TileContent> nextMove = null;
@@ -78,8 +84,9 @@ namespace LHGames.Bot
             {
                 instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
             }
-  
-            
+
+
+
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
