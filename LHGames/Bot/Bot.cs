@@ -79,7 +79,7 @@ namespace LHGames.Bot
                 case TileContent.Lava:
                     break;
                 case TileContent.Player:
-                    nextMove = checkNextTile(map,playerTiles[1].Position);
+                    nextMove = checkNextTile(map,playerTiles[0].Position);
                     break;
                 case TileContent.Resource:
                     nextMove = checkNextTile(map, closestResource.Position);
@@ -135,7 +135,7 @@ namespace LHGames.Bot
             int distanceEnnemy = 100;
             if(playerTiles.Count > 0)
             {
-                distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[1].Position, PlayerInfo.Position);
+                distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[0].Position, PlayerInfo.Position);
             }
              
             if (listTitlePriority.Count == 0)
