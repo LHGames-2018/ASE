@@ -58,15 +58,20 @@ namespace LHGames.Bot
             map.VisibleDistance = 20;
             List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
-            List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
-            List<Tile> playerTiles = visibleTiles.Where(t => t.TileType == TileContent.Player).ToList();
+            ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
+            playerTiles = visibleTiles.Where(t => t.TileType == TileContent.Player).ToList();
+
+            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
 
             Point destination = PlayerInfo.HouseLocation;
             if (ressourceTiles.Count != 0)
             {
-                DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
                 ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
                 destination = ressourceTiles[0].Position;
+            }
+            if (playerTiles.Count != 0)
+            {
+                playerTiles = playerTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
             }
 
             Tile closestResource = ressourceTiles[0];
