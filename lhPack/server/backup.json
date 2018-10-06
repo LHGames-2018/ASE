@@ -2,7 +2,18 @@
   "$type": "LHGames.Tiles.Map, LHGames",
   "ChangedTiles": {
     "$type": "System.Collections.Generic.List`1[[LHGamesShared.Point, LHGamesShared]], System.Private.CoreLib",
-    "$values": []
+    "$values": [
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 8,
+        "y": 27
+      },
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 5,
+        "y": 26
+      }
+    ]
   },
   "Tiles": {
     "$type": "LHGames.Tiles.ITile[,], LHGames",
@@ -2860,17 +2871,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 400,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 4,
             "y": 5
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -3768,14 +3776,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 5,
             "y": 26
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -5830,17 +5841,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 8,
             "y": 27
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -8354,14 +8362,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 12,
             "y": 5
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -16641,14 +16652,17 @@
           }
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 24,
             "y": 9
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -19827,17 +19841,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 400,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 28,
             "y": 55
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -21904,7 +21915,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
           "Type": 2,
           "Position": {
@@ -24114,17 +24125,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 400,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 35,
             "y": 4
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -26666,14 +26674,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 38,
             "y": 54
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -33536,17 +33547,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 400,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 48,
             "y": 55
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -36492,7 +36500,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
           "Type": 2,
           "Position": {
@@ -36960,7 +36968,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
           "Type": 2,
           "Position": {
@@ -39668,14 +39676,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 57,
             "y": 49
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -45371,7 +45382,7 @@
       },
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
         "Type": 2,
         "Position": {
@@ -45383,7 +45394,7 @@
       },
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
         "Type": 2,
         "Position": {
@@ -45407,7 +45418,7 @@
       },
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
         "Type": 2,
         "Position": {
@@ -45446,7 +45457,7 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 4,
+        "x": 10,
         "y": 6
       },
       "LastKills": {
@@ -45454,15 +45465,15 @@
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 100,
+      "CarriedResources": 500,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 3600,
-      "TurnsSinceSpawn": 100
+      "TotalResources": 4000,
+      "TurnsSinceSpawn": 110
     },
     "4e5bbea7-ae1e-4841-a8c7-855f0bc08702": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45489,23 +45500,23 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 9,
-        "y": 31
+        "x": 7,
+        "y": 28
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 0,
+      "CarriedResources": 500,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 100
+      "TotalResources": 4500,
+      "TurnsSinceSpawn": 110
     },
     "27e8460e-b609-40a2-a697-2fa1dc47b13f": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45548,7 +45559,7 @@
       "CollectingSpeed": 1.0,
       "IsDead": false,
       "TotalResources": 3000,
-      "TurnsSinceSpawn": 100
+      "TurnsSinceSpawn": 110
     },
     "316eed20-dd06-4f21-b7be-2193efe95391": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45575,34 +45586,34 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 35,
-        "y": 5
+        "x": 31,
+        "y": 7
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 600,
+      "CarriedResources": 1000,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 3600,
-      "TurnsSinceSpawn": 100
+      "TotalResources": 4000,
+      "TurnsSinceSpawn": 110
     },
     "26acb210-f6f8-47be-b01b-3d7326f6a90a": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 3",
       "PlayerID": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
-      "Score": 3000,
+      "Score": 4000,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
         "Type": 2,
         "Position": {
@@ -45618,34 +45629,34 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 28,
-        "y": 56
+        "x": 31,
+        "y": 53
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 600,
+      "CarriedResources": 0,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 3600,
-      "TurnsSinceSpawn": 100
+      "TotalResources": 4000,
+      "TurnsSinceSpawn": 110
     },
     "719df65b-56d3-4e1d-acbd-fbd4dae70ac5": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 6",
       "PlayerID": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
-      "Score": 3000,
+      "Score": 4000,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
         "Type": 2,
         "Position": {
@@ -45661,15 +45672,15 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 58,
-        "y": 8
+        "x": 54,
+        "y": 12
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 1000,
+      "CarriedResources": 0,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
@@ -45677,7 +45688,7 @@
       "CollectingSpeed": 1.0,
       "IsDead": false,
       "TotalResources": 4000,
-      "TurnsSinceSpawn": 100
+      "TurnsSinceSpawn": 110
     },
     "b380bc43-8813-46d4-8e34-09a46ae6dd4b": {
       "$type": "LHGames.Players.NetworkedPlayer, LHGames",
@@ -45720,18 +45731,18 @@
       "CollectingSpeed": 1.0,
       "IsDead": false,
       "TotalResources": 0,
-      "TurnsSinceSpawn": 100
+      "TurnsSinceSpawn": 110
     },
     "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 0",
       "PlayerID": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
-      "Score": 3000,
+      "Score": 4000,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
         "Type": 2,
         "Position": {
@@ -45747,72 +45758,29 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 48,
-        "y": 54
+        "x": 53,
+        "y": 53
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 600,
+      "CarriedResources": 0,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 3600,
-      "TurnsSinceSpawn": 100
+      "TotalResources": 4000,
+      "TurnsSinceSpawn": 110
     }
   },
   "RealmRadius": 9,
   "Leaderboard": {
     "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
     "$values": [
-      {
-        "$type": "LHGames.Players.LocalPlayer, LHGames",
-        "Name": "Enemy 5",
-        "PlayerID": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
-        "Score": 3500,
-        "KillCount": 0,
-        "DeathCount": 0,
-        "House": {
-          "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3500,
-          "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
-          "Type": 2,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 9,
-            "y": 9
-          },
-          "IsEmpty": true
-        },
-        "Items": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Position": {
-          "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 4,
-          "y": 6
-        },
-        "LastKills": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Health": 10,
-        "CarriedResources": 100,
-        "MaxHealth": 10,
-        "AttackPower": 1,
-        "Defence": 1,
-        "CarryingCapacity": 1000,
-        "CollectingSpeed": 1.0,
-        "IsDead": false,
-        "TotalResources": 3600,
-        "TurnsSinceSpawn": 100
-      },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 2",
@@ -45838,8 +45806,51 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 9,
-          "y": 31
+          "x": 7,
+          "y": 28
+        },
+        "LastKills": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Health": 10,
+        "CarriedResources": 500,
+        "MaxHealth": 10,
+        "AttackPower": 1,
+        "Defence": 1,
+        "CarryingCapacity": 1000,
+        "CollectingSpeed": 1.0,
+        "IsDead": false,
+        "TotalResources": 4500,
+        "TurnsSinceSpawn": 110
+      },
+      {
+        "$type": "LHGames.Players.LocalPlayer, LHGames",
+        "Name": "Enemy 6",
+        "PlayerID": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
+        "Score": 4000,
+        "KillCount": 0,
+        "DeathCount": 0,
+        "House": {
+          "$type": "LHGames.Tiles.HouseTile, LHGames",
+          "StashedResources": 4000,
+          "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
+          "Type": 2,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 53,
+            "y": 9
+          },
+          "IsEmpty": true
+        },
+        "Items": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Position": {
+          "$type": "LHGamesShared.Point, LHGamesShared",
+          "x": 54,
+          "y": 12
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
@@ -45854,7 +45865,50 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 4000,
-        "TurnsSinceSpawn": 100
+        "TurnsSinceSpawn": 110
+      },
+      {
+        "$type": "LHGames.Players.LocalPlayer, LHGames",
+        "Name": "Enemy 5",
+        "PlayerID": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
+        "Score": 3500,
+        "KillCount": 0,
+        "DeathCount": 0,
+        "House": {
+          "$type": "LHGames.Tiles.HouseTile, LHGames",
+          "StashedResources": 3500,
+          "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
+          "Type": 2,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 9,
+            "y": 9
+          },
+          "IsEmpty": true
+        },
+        "Items": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Position": {
+          "$type": "LHGamesShared.Point, LHGamesShared",
+          "x": 10,
+          "y": 6
+        },
+        "LastKills": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Health": 10,
+        "CarriedResources": 500,
+        "MaxHealth": 10,
+        "AttackPower": 1,
+        "Defence": 1,
+        "CarryingCapacity": 1000,
+        "CollectingSpeed": 1.0,
+        "IsDead": false,
+        "TotalResources": 4000,
+        "TurnsSinceSpawn": 110
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45881,34 +45935,34 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 35,
-          "y": 5
+          "x": 31,
+          "y": 7
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 600,
+        "CarriedResources": 1000,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 3600,
-        "TurnsSinceSpawn": 100
+        "TotalResources": 4000,
+        "TurnsSinceSpawn": 110
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 3",
         "PlayerID": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
-        "Score": 3000,
+        "Score": 4000,
         "KillCount": 0,
         "DeathCount": 0,
         "House": {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "26acb210-f6f8-47be-b01b-3d7326f6a90a",
           "Type": 2,
           "Position": {
@@ -45924,58 +45978,15 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 28,
-          "y": 56
+          "x": 31,
+          "y": 53
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 600,
-        "MaxHealth": 10,
-        "AttackPower": 1,
-        "Defence": 1,
-        "CarryingCapacity": 1000,
-        "CollectingSpeed": 1.0,
-        "IsDead": false,
-        "TotalResources": 3600,
-        "TurnsSinceSpawn": 100
-      },
-      {
-        "$type": "LHGames.Players.LocalPlayer, LHGames",
-        "Name": "Enemy 6",
-        "PlayerID": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
-        "Score": 3000,
-        "KillCount": 0,
-        "DeathCount": 0,
-        "House": {
-          "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
-          "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
-          "Type": 2,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 53,
-            "y": 9
-          },
-          "IsEmpty": true
-        },
-        "Items": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Position": {
-          "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 58,
-          "y": 8
-        },
-        "LastKills": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Health": 10,
-        "CarriedResources": 1000,
+        "CarriedResources": 0,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
@@ -45983,18 +45994,18 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 4000,
-        "TurnsSinceSpawn": 100
+        "TurnsSinceSpawn": 110
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 0",
         "PlayerID": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
-        "Score": 3000,
+        "Score": 4000,
         "KillCount": 0,
         "DeathCount": 0,
         "House": {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8",
           "Type": 2,
           "Position": {
@@ -46010,23 +46021,23 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 48,
-          "y": 54
+          "x": 53,
+          "y": 53
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 600,
+        "CarriedResources": 0,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 3600,
-        "TurnsSinceSpawn": 100
+        "TotalResources": 4000,
+        "TurnsSinceSpawn": 110
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -46069,7 +46080,7 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 3000,
-        "TurnsSinceSpawn": 100
+        "TurnsSinceSpawn": 110
       },
       {
         "$type": "LHGames.Players.NetworkedPlayer, LHGames",
@@ -46112,7 +46123,7 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 0,
-        "TurnsSinceSpawn": 100
+        "TurnsSinceSpawn": 110
       }
     ]
   }

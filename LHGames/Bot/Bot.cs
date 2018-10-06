@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using LHGames.Helper;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Server.Kestrel.Internal.System.Collections.Sequences;
+=======
+using System.Linq;
+>>>>>>> 880d6ed1ec88bb3d45c33d31f60002f163bcd10d
 
 namespace LHGames.Bot
 {
@@ -21,23 +26,57 @@ namespace LHGames.Bot
             PlayerInfo = playerInfo;
         }
 
+        internal void fight(Tile obstacleTile) {
+
+        }
+
         /// <summary>
         /// Implement your bot here.
         /// </summary>
         /// <param name="map">The gamemap.</param>
         /// <param name="visiblePlayers">Players that are visible to your bot.</param>
         /// <returns>The action you wish to execute.</returns>
+        static int vertical = 0;
+        static int horizontal = 0;
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
-            if (map.GetTileAt(PlayerInfo.Position.X + _currentDirection, PlayerInfo.Position.Y) == TileContent.Wall)
-            {
-                _currentDirection *= -1;
+            string instruction = "";
+            map.VisibleDistance = 20;
+            List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
+
+            List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
+
+            Point playerPosition = this.PlayerInfo.Position;
+            int smallestDelta = int.MaxValue;
+            Tile nearTile = null;
+            int dxFromNearTile = 0, dyFromNearTile = 0;
+            foreach (Tile ressourceTile in ressourceTiles) {
+                Point ressourcePosition = ressourceTile.Position;
+                int dx = Math.Abs(ressourcePosition.X - playerPosition.X);
+                int dy = Math.Abs(ressourcePosition.Y - playerPosition.Y);
+                int delta = (int) (Math.Pow(dx, 2) + Math.Pow(dy, 2));
+                if (delta < smallestDelta) {
+                    smallestDelta = delta;
+                    nearTile = ressourceTile;
+                    dxFromNearTile = dx;
+                    dyFromNearTile = dy;
+                }
+
+                if (dxFromNearTile > 1 || dyFromNearTile > 1) {
+                    // move to the ressource
+                    
+                    // update deltas
+                }
+
             }
+
+  
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
-            return AIHelper.CreateMoveAction(new Point(_currentDirection, 0));
+            return instruction;//AIHelper.CreateCollectAction(new Point(1, 0));
+            //return AIHelper.CreateMoveAction(new Point(-1, 0));
         }
 
         /// <summary>
