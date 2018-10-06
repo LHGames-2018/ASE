@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using LHGames.Helper;
 
@@ -20,6 +21,8 @@ namespace LHGames.Bot
             PlayerInfo = playerInfo;
         }
 
+        // TODO function recomputeDeltas
+
         /// <summary>
         /// Implement your bot here.
         /// </summary>
@@ -30,6 +33,34 @@ namespace LHGames.Bot
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
+            map.VisibleDistance = 20;
+            IEnumerable<Tile> visibleTiles = map.GetVisibleTiles();
+            IEnumerator<Tile> visibleTilesEnumerator = visibleTiles.GetEnumerator();
+
+            ArrayList ressourceTiles = new ArrayList();
+
+            while (visibleTilesEnumerator.MoveNext()) {
+                if (visibleTilesEnumerator.Current.TileType == TileContent.Resource) {
+                    ressourceTiles.Add(visibleTilesEnumerator.Current);
+                }
+            }
+
+            Point playerPosition = this.PlayerInfo.Position;
+            int smallestDelta = int.MaxValue;
+            Tile nearTile = null;
+            foreach (Tile ressourceTile in ressourceTiles) {
+                Point ressourcePosition = ressourceTile.Position;
+                int dx = Math.Abs(ressourcePosition.X - playerPosition.X);
+                int dy = Math.Abs(ressourcePosition.Y - playerPosition.Y);
+                int delta = (int) (Math.Pow(dx, 2) + Math.Pow(dy, 2));
+                if (delta < smallestDelta) {
+                    smallestDelta = delta;
+                    nearTile = ressourceTile;
+                }
+            }
+
+            // Move to the ressource
+
             string instruction = "";
             if (vertical != 4)
             {
