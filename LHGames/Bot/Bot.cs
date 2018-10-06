@@ -104,7 +104,8 @@ namespace LHGames.Bot
                     instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
                     break;
                 case TileContent.House:
-                    nextMove = checkNextTile(map, closestResource.Position);
+                    instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
+                    //nextMove = checkNextTile(map, closestResource.Position);
                     break;
                 case TileContent.Lava:
                     break;
@@ -115,6 +116,8 @@ namespace LHGames.Bot
                 case TileContent.Shop:
                     break;
                 case TileContent.Player:
+                    instruction = AIHelper.CreateMeleeAttackAction(nextMove.Item1 - this.PlayerInfo.Position);
+                    break;
                 case TileContent.Wall:
                     instruction = AIHelper.CreateMeleeAttackAction(nextMove.Item1 - this.PlayerInfo.Position);
                     break;
@@ -138,7 +141,7 @@ namespace LHGames.Bot
             float facteurEloignement = ((float)PlayerInfo.CarriedResources / PlayerInfo.CarryingCapacity);
 
             int distanceEnnemy = 100;
-            if(playerTiles.Count > 0)
+            if(playerTiles.Count > 1)
             {
                 distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[0].Position, PlayerInfo.Position);
             }
