@@ -30,6 +30,7 @@ namespace LHGames.Bot
         /// <param name="visiblePlayers">Players that are visible to your bot.</param>
         /// <returns>The action you wish to execute.</returns>
         static int vertical = 0;
+        static int horizontal = 0;
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
@@ -62,11 +63,25 @@ namespace LHGames.Bot
             // Move to the ressource
 
             string instruction = "";
-            if (vertical != 4)
+            if (horizontal != 4)
             {
-                vertical++;
-                instruction = AIHelper.CreateMoveAction(new Point(0, 1));
+                horizontal++;
+                instruction = AIHelper.CreateMoveAction(new Point(-1, 0));
             }
+            /*
+            else
+            {
+                if (horizontal != 5)
+                {
+                    horizontal++;
+                    instruction = AIHelper.CreateMoveAction(new Point(1, 0));
+                }
+                else
+                {
+                    instruction = AIHelper.CreateCollectAction(new Point(1, 0));
+                }
+            }
+            */
             if (map.GetTileAt(PlayerInfo.Position.X + _currentDirection, PlayerInfo.Position.Y) == TileContent.Wall)
             {
                 _currentDirection *= -1;
