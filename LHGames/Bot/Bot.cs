@@ -81,6 +81,10 @@ namespace LHGames.Bot
             {
                 instruction = AIHelper.CreateCollectAction(nextMove.Item1 - this.PlayerInfo.Position);
             }
+            else if(nextMove.Item2 == TileContent.Wall)
+            {
+                instruction = AIHelper.CreateMeleeAttackAction(nextMove.Item1 - this.PlayerInfo.Position);
+            }
             else
             {
                 instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
