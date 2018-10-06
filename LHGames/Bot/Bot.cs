@@ -32,11 +32,12 @@ namespace LHGames.Bot
         {
             // TODO: Implement your AI here.
             string instruction = "";
-            if (vertical != 3)
+            if (horizontal != 4)
             {
-                vertical++;
-                instruction = AIHelper.CreateMoveAction(new Point(0, -1));
+                horizontal++;
+                instruction = AIHelper.CreateMoveAction(new Point(-1, 0));
             }
+            /*
             else
             {
                 if (horizontal != 5)
@@ -49,6 +50,7 @@ namespace LHGames.Bot
                     instruction = AIHelper.CreateCollectAction(new Point(1, 0));
                 }
             }
+            */
             if (map.GetTileAt(PlayerInfo.Position.X + _currentDirection, PlayerInfo.Position.Y) == TileContent.Wall)
             {
                 _currentDirection *= -1;
