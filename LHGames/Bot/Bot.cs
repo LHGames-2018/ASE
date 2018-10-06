@@ -59,33 +59,6 @@ namespace LHGames.Bot
 
             Tile closestResource = ressourceTiles[0];
 
-
-
-
-            /*
-            int smallestDelta = int.MaxValue;
-            Tile nearTile = null;
-            int dxFromNearTile = 0, dyFromNearTile = 0;
-            foreach (Tile ressourceTile in ressourceTiles) {
-                Point ressourcePosition = ressourceTile.Position;
-                int dx = Math.Abs(ressourcePosition.X - playerPosition.X);
-                int dy = Math.Abs(ressourcePosition.Y - playerPosition.Y);
-                int delta = (int) (Math.Pow(dx, 2) + Math.Pow(dy, 2));
-                if (delta < smallestDelta) {
-                    smallestDelta = delta;
-                    nearTile = ressourceTile;
-                    dxFromNearTile = dx;
-                    dyFromNearTile = dy;
-                }
-
-                if (dxFromNearTile > 1 || dyFromNearTile > 1) {
-                    // move to the ressource
-                    
-                    // update deltas
-                }
-
-            }*/
-
             Tuple<Point, TileContent> nextMove = checkNextTile(map, closestResource);
 
             TileContent nextTitleContent = nextMove.Item2;
