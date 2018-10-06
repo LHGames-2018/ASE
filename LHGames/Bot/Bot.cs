@@ -16,7 +16,8 @@ namespace LHGames.Bot
         internal Bot() { }
 
         List<TileContent> listTitlePriority = new List<TileContent>() { TileContent.Resource };
-
+   
+      
         /// <summary>
         /// Gets called before ExecuteTurn. This is where you get your bot's state.
         /// </summary>
@@ -99,6 +100,12 @@ namespace LHGames.Bot
         /// </summary>
         internal void AfterTurn()
         {
+            if(listTitlePriority.Count == 0)
+            {
+                listTitlePriority.Add(TileContent.Resource);
+            }
+
+
             if(this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100)
             {
                 if (listTitlePriority[0] == TileContent.Resource)
