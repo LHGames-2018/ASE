@@ -125,7 +125,11 @@ namespace LHGames.Bot
 
             }
 
-
+            if (vertical < 8)
+            {
+                vertical++;
+                instruction = AIHelper.CreateCollectAction(new Point(-1, 0));
+            }
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
