@@ -15,6 +15,8 @@ namespace LHGames.Bot
         private int _currentDirection = 1;
         internal Bot() { }
 
+        const int PORTEE_MAXIMALE = 28900;
+
         List<TileContent> listTitlePriority = new List<TileContent>() { TileContent.Resource };
    
       
@@ -56,7 +58,8 @@ namespace LHGames.Bot
             List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
-          
+            List<Tile> playerTiles = visibleTiles.Where(t => t.TileType == TileContent.Player).ToList();
+
             Point destination = PlayerInfo.HouseLocation;
             if (ressourceTiles.Count != 0)
             {
@@ -104,13 +107,17 @@ namespace LHGames.Bot
         /// </summary>
         internal void AfterTurn()
         {
-            if(listTitlePriority.Count == 0)
+            int distanceDeLaMaisonCarre = TrouverDistanceEntreDeuxPoints(PlayerInfo.HouseLocation, PlayerInfo.Position);
+
+
+            if (listTitlePriority.Count == 0)
             {
                 listTitlePriority.Add(TileContent.Resource);
             }
 
 
-            if(this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100)
+            if(this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
+                || distanceDeLaMaisonCarre >= PORTEE_MAXIMALE)
             {
                 if (listTitlePriority[0] == TileContent.Resource)
                 {
