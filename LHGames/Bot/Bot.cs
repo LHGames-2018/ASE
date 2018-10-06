@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using LHGames.Helper;
-<<<<<<< HEAD
-using Microsoft.AspNetCore.Server.Kestrel.Internal.System.Collections.Sequences;
-=======
 using System.Linq;
->>>>>>> 880d6ed1ec88bb3d45c33d31f60002f163bcd10d
+using LHGames.Helper;
+using Microsoft.AspNetCore.Server.Kestrel.Internal.System.Collections.Sequences;
+using System.Linq;
+
 
 namespace LHGames.Bot
 {
@@ -100,7 +99,7 @@ namespace LHGames.Bot
                 }
                 else
                 {
-                    posX--;
+                    posX++;
                 }
 
             }
