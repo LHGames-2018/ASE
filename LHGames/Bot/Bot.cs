@@ -37,6 +37,7 @@ namespace LHGames.Bot
         /// <returns>The action you wish to execute.</returns>
         static int vertical = 0;
         static int horizontal = 0;
+        static Random generateurAleatoire = new Random();
         public delegate int DistanceFromTiles(Point positionRessource, Point positionJoueur);
 
         public int TrouverDistanceEntreDeuxPoints(Point positionRessource, Point positionJoueur)
@@ -54,37 +55,14 @@ namespace LHGames.Bot
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
 
-            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
-            ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
-
-            Tile closestResource = ressourceTiles[0];
-
-            /*
-            int smallestDelta = int.MaxValue;
-            Tile nearTile = null;
-            int dxFromNearTile = 0, dyFromNearTile = 0;
-            foreach (Tile ressourceTile in ressourceTiles) {
-                Point ressourcePosition = ressourceTile.Position;
-                int dx = Math.Abs(ressourcePosition.X - playerPosition.X);
-                int dy = Math.Abs(ressourcePosition.Y - playerPosition.Y);
-                int delta = (int) (Math.Pow(dx, 2) + Math.Pow(dy, 2));
-                if (delta < smallestDelta) {
-                    smallestDelta = delta;
-                    nearTile = ressourceTile;
-                    dxFromNearTile = dx;
-                    dyFromNearTile = dy;
-                }
-
-                if (dxFromNearTile > 1 || dyFromNearTile > 1) {
-                    // move to the ressource
-                    
-                    // update deltas
-                }
-
-            }*/
-
-  
-
+            Point destination = PlayerInfo.HouseLocation;
+            if (ressourceTiles.Count != 0)
+            {
+                DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
+                ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+                destination = ressourceTiles[0].Position;
+            }
+            
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
             return instruction;//AIHelper.CreateCollectAction(new Point(1, 0));
