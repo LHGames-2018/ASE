@@ -64,30 +64,31 @@ namespace LHGames.Bot
             DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
 
             Point destination = PlayerInfo.HouseLocation;
-            if (ressourceTiles.Count != 0)
-            {
-                ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
-                destination = ressourceTiles[0].Position;
-            }
-            if (playerTiles.Count != 0)
-            {
-                playerTiles = playerTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
-            }
 
-            Tile closestResource = ressourceTiles[0];
+
+
             Tuple<Point, TileContent> nextMove = null;
             switch(listTitlePriority[0])
             {
                 case TileContent.House:
-                    nextMove = checkNextTile(map, closestResource.Position);
+                    nextMove = checkNextTile(map, destination);
                     break;
                 case TileContent.Lava:
                     break;
                 case TileContent.Player:
+                    if (playerTiles.Count != 0)
+                    {
+                        playerTiles = playerTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
+                    }
                     nextMove = checkNextTile(map,playerTiles[0].Position);
                     break;
                 case TileContent.Resource:
-                    nextMove = checkNextTile(map, closestResource.Position);
+                    if (ressourceTiles.Count != 0)
+                    {
+                        ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+                        destination = ressourceTiles[0].Position;
+                    }
+                    nextMove = checkNextTile(map, destination);
                     break;
                 case TileContent.Shop:
                     break;
@@ -158,20 +159,16 @@ namespace LHGames.Bot
                     listTitlePriority.Insert(0,TileContent.Player);
                 }
 
-            }else if (this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
+            }else if (this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity
                 || distanceDeLaMaisonCarre * facteurEloignement >= PORTEE_MAXIMALE)
-            {
-                
-                if (listTitlePriority[0] != TileContent.House)
-                {
-                    listTitlePriority.Insert(0,TileContent.House);
-                }
-               
-            }
-            
+                    {
+                        if (listTitlePriority[0] != TileContent.House)
+                        {
+                            listTitlePriority.Insert(0,TileContent.House);
+                        }
+                    }
             else
             {
-              
                 if( listTitlePriority[0] != TileContent.Resource)
                 {
                     listTitlePriority.Insert(0,TileContent.Resource);
