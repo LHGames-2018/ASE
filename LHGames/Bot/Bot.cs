@@ -23,11 +23,7 @@ namespace LHGames.Bot
         }
 
         internal void fight(Tile obstacleTile) {
-            Point obstaclePosition = obstacleTile.Position;
-            while (obstacleTile.TileType != TileContent.Resource || 
-                obstacleTile.TileType != TileContent.Empty) {
-                AIHelper.CreateMeleeAttackAction(obstaclePosition);
-            }
+
         }
 
         /// <summary>
