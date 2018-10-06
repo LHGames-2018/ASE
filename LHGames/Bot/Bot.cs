@@ -16,10 +16,11 @@ namespace LHGames.Bot
         internal Bot() { }
 
         const int PORTEE_MAXIMALE = 28900;
-
+        const int PORTEE_ENNEMI = 20;
         List<TileContent> listTitlePriority = new List<TileContent>() { TileContent.Resource };
-   
-      
+        List<Tile> ressourceTiles;
+        List<Tile> playerTiles;
+
         /// <summary>
         /// Gets called before ExecuteTurn. This is where you get your bot's state.
         /// </summary>
@@ -70,29 +71,50 @@ namespace LHGames.Bot
 
             Tile closestResource = ressourceTiles[0];
             Tuple<Point, TileContent> nextMove = null;
-            if (listTitlePriority[0] == TileContent.House)
+            switch(listTitlePriority[0])
             {
-                nextMove = checkNextTile(map, this.PlayerInfo.HouseLocation);
+                case TileContent.House:
+                    nextMove = checkNextTile(map, closestResource.Position);
+                    break;
+                case TileContent.Lava:
+                    break;
+                case TileContent.Player:
+                    nextMove = checkNextTile(map,playerTiles[1].Position);
+                    break;
+                case TileContent.Resource:
+                    nextMove = checkNextTile(map, closestResource.Position);
+                    break;
+                case TileContent.Shop:
+                    break;
+                case TileContent.Wall:
+                    break;
+                
             }
-            else {
-                nextMove = checkNextTile(map, closestResource.Position);
-            }
+
             
-            TileContent nextTitleContent = nextMove.Item2;
+            
+            switch (nextMove.Item2)
+            {
+                case TileContent.Empty:
+                    instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
+                    break;
+                case TileContent.House:
+                    nextMove = checkNextTile(map, closestResource.Position);
+                    break;
+                case TileContent.Lava:
+                    break;
+               
+                case TileContent.Resource:
+                    instruction = AIHelper.CreateCollectAction(nextMove.Item1 - this.PlayerInfo.Position);
+                    break;
+                case TileContent.Shop:
+                    break;
+                case TileContent.Player:
+                case TileContent.Wall:
+                    instruction = AIHelper.CreateMeleeAttackAction(nextMove.Item1 - this.PlayerInfo.Position);
+                    break;
 
-            if(nextMove.Item2 == TileContent.Resource)
-            {
-                instruction = AIHelper.CreateCollectAction(nextMove.Item1 - this.PlayerInfo.Position);
             }
-            else if(nextMove.Item2 == TileContent.Wall)
-            {
-                instruction = AIHelper.CreateMeleeAttackAction(nextMove.Item1 - this.PlayerInfo.Position);
-            }
-            else
-            {
-                instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
-            }
-
 
 
 
@@ -110,35 +132,43 @@ namespace LHGames.Bot
             int distanceDeLaMaisonCarre = TrouverDistanceEntreDeuxPoints(PlayerInfo.HouseLocation, PlayerInfo.Position);
             float facteurEloignement = ((float)PlayerInfo.CarriedResources / PlayerInfo.CarryingCapacity);
 
+            int distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[1].Position, PlayerInfo.Position);
             if (listTitlePriority.Count == 0)
             {
-                listTitlePriority.Add(TileContent.Resource);
+                listTitlePriority.Insert(0,TileContent.Resource);
             }
 
-            
-            if (this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
+            if(distanceEnnemy <= PORTEE_ENNEMI)
+            {
+                if(listTitlePriority[0] != TileContent.Player)
+                {
+                    listTitlePriority.Insert(0,TileContent.Player);
+                }
+
+            }else if (this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
                 || distanceDeLaMaisonCarre * facteurEloignement >= PORTEE_MAXIMALE)
             {
-                if (listTitlePriority[0] == TileContent.Resource)
+                
+                if (listTitlePriority[0] != TileContent.House)
                 {
-                    listTitlePriority.RemoveAt(0);
-                }
-                if (listTitlePriority.Count == 0 || listTitlePriority[0] != TileContent.House)
-                {
-                    listTitlePriority.Add(TileContent.House);
+                    listTitlePriority.Insert(0,TileContent.House);
                 }
                
             }
+            
             else
             {
-                if(listTitlePriority[0] == TileContent.House)
+              
+                if( listTitlePriority[0] != TileContent.Resource)
                 {
-                    listTitlePriority.RemoveAt(0);
+                    listTitlePriority.Insert(0,TileContent.Resource);
                 }
-                if(listTitlePriority.Count == 0 || listTitlePriority[0] != TileContent.Resource)
-                {
-                    listTitlePriority.Add(TileContent.Resource);
-                }
+            }
+
+
+            while(listTitlePriority.Count > 15)
+            {
+                listTitlePriority.RemoveAt(listTitlePriority.Count-1);
             }
         }
 
