@@ -108,16 +108,16 @@ namespace LHGames.Bot
         internal void AfterTurn()
         {
             int distanceDeLaMaisonCarre = TrouverDistanceEntreDeuxPoints(PlayerInfo.HouseLocation, PlayerInfo.Position);
-
+            float facteurEloignement = ((float)PlayerInfo.CarriedResources / PlayerInfo.CarryingCapacity);
 
             if (listTitlePriority.Count == 0)
             {
                 listTitlePriority.Add(TileContent.Resource);
             }
 
-
-            if(this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
-                || distanceDeLaMaisonCarre >= PORTEE_MAXIMALE)
+            
+            if (this.PlayerInfo.CarriedResources >= this.PlayerInfo.CarryingCapacity - 100
+                || distanceDeLaMaisonCarre * facteurEloignement >= PORTEE_MAXIMALE)
             {
                 if (listTitlePriority[0] == TileContent.Resource)
                 {
