@@ -49,6 +49,7 @@ namespace LHGames.Bot
             Point playerPosition = this.PlayerInfo.Position;
             int smallestDelta = int.MaxValue;
             Tile nearTile = null;
+            int dxFromNearTile = 0, dyFromNearTile = 0;
             foreach (Tile ressourceTile in ressourceTiles) {
                 Point ressourcePosition = ressourceTile.Position;
                 int dx = Math.Abs(ressourcePosition.X - playerPosition.X);
@@ -57,7 +58,15 @@ namespace LHGames.Bot
                 if (delta < smallestDelta) {
                     smallestDelta = delta;
                     nearTile = ressourceTile;
+                    dxFromNearTile = dx;
+                    dyFromNearTile = dy;
                 }
+
+                while (dxFromNearTile > 1 || dyFromNearTile > 1) {
+                    // move to the ressource
+                    // update deltas
+                }
+
             }
 
             // Move to the ressource
