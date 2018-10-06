@@ -123,7 +123,7 @@ namespace LHGames.Bot
                 {
                     listTitlePriority.RemoveAt(0);
                 }
-                if (listTitlePriority[0] != TileContent.House)
+                if (listTitlePriority.Count == 0 || listTitlePriority[0] != TileContent.House)
                 {
                     listTitlePriority.Add(TileContent.House);
                 }
@@ -135,7 +135,7 @@ namespace LHGames.Bot
                 {
                     listTitlePriority.RemoveAt(0);
                 }
-                if(listTitlePriority[0] != TileContent.Resource)
+                if(listTitlePriority.Count == 0 || listTitlePriority[0] != TileContent.Resource)
                 {
                     listTitlePriority.Add(TileContent.Resource);
                 }
