@@ -55,6 +55,10 @@ namespace LHGames.Bot
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
 
+            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
+            ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+
+            
             Point destination = PlayerInfo.HouseLocation;
             if (ressourceTiles.Count != 0)
             {
@@ -62,7 +66,27 @@ namespace LHGames.Bot
                 ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
                 destination = ressourceTiles[0].Position;
             }
+
+
+
             
+
+            Tuple<Point, TileContent> nextMove = checkNextTile(map, closestResource);
+
+            TileContent nextTitleContent = nextMove.Item2;
+
+            if(nextMove.Item2 == TileContent.Resource)
+            {
+                instruction = AIHelper.CreateCollectAction(nextMove.Item1 - this.PlayerInfo.Position);
+            }
+            else
+            {
+                instruction = AIHelper.CreateMoveAction(nextMove.Item1 - this.PlayerInfo.Position);
+            }
+
+
+
+
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
             return instruction;//AIHelper.CreateCollectAction(new Point(1, 0));
