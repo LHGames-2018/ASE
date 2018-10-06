@@ -19,7 +19,7 @@ namespace LHGames.Bot
         const int PORTEE_ENNEMI = 20;
         List<TileContent> listTitlePriority = new List<TileContent>() { TileContent.Resource };
         List<Tile> ressourceTiles;
-        List<Tile> playerTiles;
+        List<Tile> enemiesTiles;
 
         /// <summary>
         /// Gets called before ExecuteTurn. This is where you get your bot's state.
@@ -59,7 +59,7 @@ namespace LHGames.Bot
             List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
             ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
-            playerTiles = visibleTiles.Where(t => t.TileType == TileContent.Player).ToList();
+            enemiesTiles = visibleTiles.Where(t => t.TileType == TileContent.Player).ToList();
 
             DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
 
@@ -76,11 +76,11 @@ namespace LHGames.Bot
                 case TileContent.Lava:
                     break;
                 case TileContent.Player:
-                    if (playerTiles.Count != 0)
+                    if (enemiesTiles.Count != 0)
                     {
-                        playerTiles = playerTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
+                        enemiesTiles = enemiesTiles.OrderBy(p => dist(p.Position, PlayerInfo.Position)).ToList();
                     }
-                    nextMove = checkNextTile(map,playerTiles[0].Position);
+                    nextMove = checkNextTile(map,enemiesTiles[1].Position);
                     break;
                 case TileContent.Resource:
                     if (ressourceTiles.Count != 0)
@@ -142,9 +142,9 @@ namespace LHGames.Bot
             float facteurEloignement = ((float)PlayerInfo.CarriedResources / PlayerInfo.CarryingCapacity);
 
             int distanceEnnemy = 100;
-            if(playerTiles.Count > 1)
+            if(enemiesTiles.Count > 1)
             {
-                distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[0].Position, PlayerInfo.Position);
+                distanceEnnemy = TrouverDistanceEntreDeuxPoints(enemiesTiles[1].Position, PlayerInfo.Position);
             }
              
             if (listTitlePriority.Count == 0)
