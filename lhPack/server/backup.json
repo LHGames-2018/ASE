@@ -5,13 +5,33 @@
     "$values": [
       {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 8,
-        "y": 27
+        "x": 24,
+        "y": 8
       },
       {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 5,
-        "y": 26
+        "x": 37,
+        "y": 55
+      },
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 60,
+        "y": 50
+      },
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 26,
+        "y": 13
+      },
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 37,
+        "y": 51
+      },
+      {
+        "$type": "LHGamesShared.Point, LHGamesShared",
+        "x": 59,
+        "y": 51
       }
     ]
   },
@@ -2221,14 +2241,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 400,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 3,
             "y": 8
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -3092,685 +3115,6 @@
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 4,
             "y": 26
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 27
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 28
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 29
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 30
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 31
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 32
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 33
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 34
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 35
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 36
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 37
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 38
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 39
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 40
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 41
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 42
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 43
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 44
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 45
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 46
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 47
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 48
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 49
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 50
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 51
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 52
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 53
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 54
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 55
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 56
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 57
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 58
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 59
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 60
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 61
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 62
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 63
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 64
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 4,
-            "y": 65
-          },
-          "IsEmpty": true,
-          "Type": 0
-        }
-      ],
-      [
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 0
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 1
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 2
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 3
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 4
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 5
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 6
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 7
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 8
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 9
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 10
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 11
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 12
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 13
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 14
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 15
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 16
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 17
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 18
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 19
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 20
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 21
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 22
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 23
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 24
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 5,
-            "y": 25
           },
           "IsEmpty": true,
           "Type": 0
@@ -3784,9 +3128,688 @@
           "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 27
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 28
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 29
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 30
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 31
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 32
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 33
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 34
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 35
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 36
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 37
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 38
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 39
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 40
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 41
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 42
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 43
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 44
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 45
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 46
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 47
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 48
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 49
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 50
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 51
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 52
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 53
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 54
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 55
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 56
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 57
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 58
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 59
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 60
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 61
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 62
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 63
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 64
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 4,
+            "y": 65
+          },
+          "IsEmpty": true,
+          "Type": 0
+        }
+      ],
+      [
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 0
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 1
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 2
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 3
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 4
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 5
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 6
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 7
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 8
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 9
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 10
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 11
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 12
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 13
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 14
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 15
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 16
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 17
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 18
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 19
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 20
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 21
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 22
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 23
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 24
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 5,
+            "y": 25
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 5,
             "y": 26
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -6339,7 +6362,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3500,
+          "StashedResources": 4500,
           "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
           "Type": 2,
           "Position": {
@@ -6573,7 +6596,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 4000,
+          "StashedResources": 5000,
           "PlayerId": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
           "Type": 2,
           "Position": {
@@ -8362,17 +8385,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 12,
             "y": 5
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -16639,30 +16659,24 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 24,
             "y": 8
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 24,
             "y": 9
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -18055,14 +18069,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 26,
             "y": 13
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -21401,7 +21418,7 @@
         },
         {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "316eed20-dd06-4f21-b7be-2193efe95391",
           "Type": 2,
           "Position": {
@@ -24175,14 +24192,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 35,
             "y": 9
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -24607,14 +24627,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 35,
             "y": 51
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -25953,46 +25976,6 @@
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 37,
             "y": 50
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 37,
-            "y": 51
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 37,
-            "y": 52
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 37,
-            "y": 53
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 37,
-            "y": 54
           },
           "IsEmpty": true,
           "Type": 0
@@ -26007,8 +25990,48 @@
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 37,
-            "y": 55
+            "y": 51
           }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 37,
+            "y": 52
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 37,
+            "y": 53
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 37,
+            "y": 54
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 37,
+            "y": 55
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -26674,17 +26697,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 38,
             "y": 54
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -34858,14 +34878,17 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.Tile, LHGames",
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 50,
             "y": 48
-          },
-          "IsEmpty": true,
-          "Type": 0
+          }
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -37260,17 +37283,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 54,
             "y": 15
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -39676,17 +39696,14 @@
           "Type": 0
         },
         {
-          "$type": "LHGames.Tiles.ResourceTile, LHGames",
-          "IsEmpty": false,
-          "Type": 4,
-          "AmountLeft": 500,
-          "Density": 1.0,
-          "IsHighDensity": false,
+          "$type": "LHGames.Tiles.Tile, LHGames",
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 57,
             "y": 49
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -40588,1163 +40605,6 @@
           },
           "IsEmpty": true,
           "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 5
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 6
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 7
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 8
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 9
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 10
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 11
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 12
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 13
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 14
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 15
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 16
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 17
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 18
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 19
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 20
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 21
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 22
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 23
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 24
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 25
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 26
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 27
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 28
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 29
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 30
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 31
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 32
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 33
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 34
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 35
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 36
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 37
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 38
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 39
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 40
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 41
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 42
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 43
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 44
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 45
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 46
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 47
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 48
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 49
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 50
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 51
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 52
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 53
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 54
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 55
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 56
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 57
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 58
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 59
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 60
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 61
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 62
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 63
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 64
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 59,
-            "y": 65
-          },
-          "IsEmpty": true,
-          "Type": 0
-        }
-      ],
-      [
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 0
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 1
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 2
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 3
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 4
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 5
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 6
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 7
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 8
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 9
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 10
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 11
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 12
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 13
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 14
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 15
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 16
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 17
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 18
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 19
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 20
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 21
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 22
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 23
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 24
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 25
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 26
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 27
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 28
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 29
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 30
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 31
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 32
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 33
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 34
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 35
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 36
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 37
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 38
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 39
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 40
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 41
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 42
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 43
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 44
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 45
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 46
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.Tile, LHGames",
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 47
-          },
-          "IsEmpty": true,
-          "Type": 0
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 48
-          }
-        },
-        {
-          "$type": "LHGames.Tiles.WallTile, LHGames",
-          "Type": 1,
-          "Health": 5,
-          "MaxHealth": 5,
-          "IsEmpty": false,
-          "IsDead": false,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 60,
-            "y": 49
-          }
         },
         {
           "$type": "LHGames.Tiles.ResourceTile, LHGames",
@@ -41755,9 +40615,1169 @@
           "IsHighDensity": false,
           "Position": {
             "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 5
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 6
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 7
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 8
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 9
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 10
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 11
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 12
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 13
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 14
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 15
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 16
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 17
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 18
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 19
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 20
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 21
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 22
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 23
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 24
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 25
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 26
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 27
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 28
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 29
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 30
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 31
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 32
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 33
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 34
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 35
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 36
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 37
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 38
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 39
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 40
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 41
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 42
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 43
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 44
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 45
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 46
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 47
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 48
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 49
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 50
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.ResourceTile, LHGames",
+          "IsEmpty": false,
+          "Type": 4,
+          "AmountLeft": 500,
+          "Density": 1.0,
+          "IsHighDensity": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 51
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 52
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 53
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 54
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 55
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 56
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 57
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 58
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 59
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 60
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 61
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 62
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 63
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 64
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 59,
+            "y": 65
+          },
+          "IsEmpty": true,
+          "Type": 0
+        }
+      ],
+      [
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 0
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 1
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 2
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 3
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 4
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 5
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 6
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 7
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 8
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 9
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 10
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 11
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 12
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 13
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 14
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 15
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 16
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 17
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 18
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 19
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 20
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 21
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 22
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 23
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 24
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 25
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 26
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 27
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 28
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 29
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 30
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 31
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 32
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 33
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 34
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 35
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 36
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 37
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 38
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 39
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 40
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 41
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 42
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 43
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 44
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 45
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 46
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 47
+          },
+          "IsEmpty": true,
+          "Type": 0
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 48
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.WallTile, LHGames",
+          "Type": 1,
+          "Health": 5,
+          "MaxHealth": 5,
+          "IsEmpty": false,
+          "IsDead": false,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 60,
+            "y": 49
+          }
+        },
+        {
+          "$type": "LHGames.Tiles.Tile, LHGames",
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
             "x": 60,
             "y": 50
-          }
+          },
+          "IsEmpty": true,
+          "Type": 0
         },
         {
           "$type": "LHGames.Tiles.Tile, LHGames",
@@ -45334,7 +45354,7 @@
     "$values": [
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3500,
+        "StashedResources": 4500,
         "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
         "Type": 2,
         "Position": {
@@ -45346,7 +45366,7 @@
       },
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 4000,
+        "StashedResources": 5000,
         "PlayerId": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
         "Type": 2,
         "Position": {
@@ -45370,7 +45390,7 @@
       },
       {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "316eed20-dd06-4f21-b7be-2193efe95391",
         "Type": 2,
         "Position": {
@@ -45436,12 +45456,12 @@
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 5",
       "PlayerID": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
-      "Score": 3500,
+      "Score": 4500,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3500,
+        "StashedResources": 4500,
         "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
         "Type": 2,
         "Position": {
@@ -45457,34 +45477,34 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 10,
-        "y": 6
+        "x": 3,
+        "y": 9
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 500,
+      "CarriedResources": 100,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 4600,
+      "TurnsSinceSpawn": 130
     },
     "4e5bbea7-ae1e-4841-a8c7-855f0bc08702": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 2",
       "PlayerID": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
-      "Score": 4000,
+      "Score": 5000,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 4000,
+        "StashedResources": 5000,
         "PlayerId": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
         "Type": 2,
         "Position": {
@@ -45500,23 +45520,23 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 7,
-        "y": 28
+        "x": 13,
+        "y": 31
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 500,
+      "CarriedResources": 0,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4500,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 5000,
+      "TurnsSinceSpawn": 130
     },
     "27e8460e-b609-40a2-a697-2fa1dc47b13f": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45559,18 +45579,18 @@
       "CollectingSpeed": 1.0,
       "IsDead": false,
       "TotalResources": 3000,
-      "TurnsSinceSpawn": 110
+      "TurnsSinceSpawn": 130
     },
     "316eed20-dd06-4f21-b7be-2193efe95391": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
       "Name": "Enemy 4",
       "PlayerID": "316eed20-dd06-4f21-b7be-2193efe95391",
-      "Score": 3000,
+      "Score": 4000,
       "KillCount": 0,
       "DeathCount": 0,
       "House": {
         "$type": "LHGames.Tiles.HouseTile, LHGames",
-        "StashedResources": 3000,
+        "StashedResources": 4000,
         "PlayerId": "316eed20-dd06-4f21-b7be-2193efe95391",
         "Type": 2,
         "Position": {
@@ -45586,8 +45606,8 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 31,
-        "y": 7
+        "x": 25,
+        "y": 9
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
@@ -45601,8 +45621,8 @@
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 5000,
+      "TurnsSinceSpawn": 130
     },
     "26acb210-f6f8-47be-b01b-3d7326f6a90a": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45629,23 +45649,23 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 31,
-        "y": 53
+        "x": 36,
+        "y": 54
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 0,
+      "CarriedResources": 1000,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 5000,
+      "TurnsSinceSpawn": 130
     },
     "719df65b-56d3-4e1d-acbd-fbd4dae70ac5": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45672,23 +45692,23 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 54,
-        "y": 12
+        "x": 47,
+        "y": 14
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 0,
+      "CarriedResources": 500,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 4500,
+      "TurnsSinceSpawn": 130
     },
     "b380bc43-8813-46d4-8e34-09a46ae6dd4b": {
       "$type": "LHGames.Players.NetworkedPlayer, LHGames",
@@ -45731,7 +45751,7 @@
       "CollectingSpeed": 1.0,
       "IsDead": false,
       "TotalResources": 0,
-      "TurnsSinceSpawn": 110
+      "TurnsSinceSpawn": 130
     },
     "5c15d119-c2cf-4b48-a10d-e9ede0c0dcf8": {
       "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45758,23 +45778,23 @@
       },
       "Position": {
         "$type": "LHGamesShared.Point, LHGamesShared",
-        "x": 53,
-        "y": 53
+        "x": 58,
+        "y": 50
       },
       "LastKills": {
         "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
         "$values": []
       },
       "Health": 10,
-      "CarriedResources": 0,
+      "CarriedResources": 1000,
       "MaxHealth": 10,
       "AttackPower": 1,
       "Defence": 1,
       "CarryingCapacity": 1000,
       "CollectingSpeed": 1.0,
       "IsDead": false,
-      "TotalResources": 4000,
-      "TurnsSinceSpawn": 110
+      "TotalResources": 5000,
+      "TurnsSinceSpawn": 130
     }
   },
   "RealmRadius": 9,
@@ -45785,12 +45805,12 @@
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 2",
         "PlayerID": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
-        "Score": 4000,
+        "Score": 5000,
         "KillCount": 0,
         "DeathCount": 0,
         "House": {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 4000,
+          "StashedResources": 5000,
           "PlayerId": "4e5bbea7-ae1e-4841-a8c7-855f0bc08702",
           "Type": 2,
           "Position": {
@@ -45806,51 +45826,8 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 7,
-          "y": 28
-        },
-        "LastKills": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Health": 10,
-        "CarriedResources": 500,
-        "MaxHealth": 10,
-        "AttackPower": 1,
-        "Defence": 1,
-        "CarryingCapacity": 1000,
-        "CollectingSpeed": 1.0,
-        "IsDead": false,
-        "TotalResources": 4500,
-        "TurnsSinceSpawn": 110
-      },
-      {
-        "$type": "LHGames.Players.LocalPlayer, LHGames",
-        "Name": "Enemy 6",
-        "PlayerID": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
-        "Score": 4000,
-        "KillCount": 0,
-        "DeathCount": 0,
-        "House": {
-          "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 4000,
-          "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
-          "Type": 2,
-          "Position": {
-            "$type": "LHGamesShared.Point, LHGamesShared",
-            "x": 53,
-            "y": 9
-          },
-          "IsEmpty": true
-        },
-        "Items": {
-          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
-          "$values": []
-        },
-        "Position": {
-          "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 54,
-          "y": 12
+          "x": 13,
+          "y": 31
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
@@ -45864,19 +45841,19 @@
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 4000,
-        "TurnsSinceSpawn": 110
+        "TotalResources": 5000,
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 5",
         "PlayerID": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
-        "Score": 3500,
+        "Score": 4500,
         "KillCount": 0,
         "DeathCount": 0,
         "House": {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3500,
+          "StashedResources": 4500,
           "PlayerId": "a306f0ca-da77-468c-83d6-d6fb70be2b1e",
           "Type": 2,
           "Position": {
@@ -45892,34 +45869,34 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 10,
-          "y": 6
+          "x": 3,
+          "y": 9
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 500,
+        "CarriedResources": 100,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 4000,
-        "TurnsSinceSpawn": 110
+        "TotalResources": 4600,
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
         "Name": "Enemy 4",
         "PlayerID": "316eed20-dd06-4f21-b7be-2193efe95391",
-        "Score": 3000,
+        "Score": 4000,
         "KillCount": 0,
         "DeathCount": 0,
         "House": {
           "$type": "LHGames.Tiles.HouseTile, LHGames",
-          "StashedResources": 3000,
+          "StashedResources": 4000,
           "PlayerId": "316eed20-dd06-4f21-b7be-2193efe95391",
           "Type": 2,
           "Position": {
@@ -45935,8 +45912,8 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 31,
-          "y": 7
+          "x": 25,
+          "y": 9
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
@@ -45950,8 +45927,8 @@
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 4000,
-        "TurnsSinceSpawn": 110
+        "TotalResources": 5000,
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -45978,23 +45955,66 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 31,
-          "y": 53
+          "x": 36,
+          "y": 54
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 0,
+        "CarriedResources": 1000,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 4000,
-        "TurnsSinceSpawn": 110
+        "TotalResources": 5000,
+        "TurnsSinceSpawn": 130
+      },
+      {
+        "$type": "LHGames.Players.LocalPlayer, LHGames",
+        "Name": "Enemy 6",
+        "PlayerID": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
+        "Score": 4000,
+        "KillCount": 0,
+        "DeathCount": 0,
+        "House": {
+          "$type": "LHGames.Tiles.HouseTile, LHGames",
+          "StashedResources": 4000,
+          "PlayerId": "719df65b-56d3-4e1d-acbd-fbd4dae70ac5",
+          "Type": 2,
+          "Position": {
+            "$type": "LHGamesShared.Point, LHGamesShared",
+            "x": 53,
+            "y": 9
+          },
+          "IsEmpty": true
+        },
+        "Items": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Items.BaseItem, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Position": {
+          "$type": "LHGamesShared.Point, LHGamesShared",
+          "x": 47,
+          "y": 14
+        },
+        "LastKills": {
+          "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
+          "$values": []
+        },
+        "Health": 10,
+        "CarriedResources": 500,
+        "MaxHealth": 10,
+        "AttackPower": 1,
+        "Defence": 1,
+        "CarryingCapacity": 1000,
+        "CollectingSpeed": 1.0,
+        "IsDead": false,
+        "TotalResources": 4500,
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -46021,23 +46041,23 @@
         },
         "Position": {
           "$type": "LHGamesShared.Point, LHGamesShared",
-          "x": 53,
-          "y": 53
+          "x": 58,
+          "y": 50
         },
         "LastKills": {
           "$type": "System.Collections.Generic.List`1[[LHGames.Players.IPlayer, LHGames]], System.Private.CoreLib",
           "$values": []
         },
         "Health": 10,
-        "CarriedResources": 0,
+        "CarriedResources": 1000,
         "MaxHealth": 10,
         "AttackPower": 1,
         "Defence": 1,
         "CarryingCapacity": 1000,
         "CollectingSpeed": 1.0,
         "IsDead": false,
-        "TotalResources": 4000,
-        "TurnsSinceSpawn": 110
+        "TotalResources": 5000,
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.LocalPlayer, LHGames",
@@ -46080,7 +46100,7 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 3000,
-        "TurnsSinceSpawn": 110
+        "TurnsSinceSpawn": 130
       },
       {
         "$type": "LHGames.Players.NetworkedPlayer, LHGames",
@@ -46123,7 +46143,7 @@
         "CollectingSpeed": 1.0,
         "IsDead": false,
         "TotalResources": 0,
-        "TurnsSinceSpawn": 110
+        "TurnsSinceSpawn": 130
       }
     ]
   }
