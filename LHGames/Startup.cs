@@ -8,6 +8,7 @@ namespace LHGames
 {
     public class Startup
     {
+
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()

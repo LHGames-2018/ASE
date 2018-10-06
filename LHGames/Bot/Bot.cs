@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LHGames.Helper;
+using Microsoft.AspNetCore.Server.Kestrel.Internal.System.Collections.Sequences;
 
 namespace LHGames.Bot
 {
@@ -8,8 +9,8 @@ namespace LHGames.Bot
     {
         internal IPlayer PlayerInfo { get; set; }
         private int _currentDirection = 1;
-
         internal Bot() { }
+        
 
         /// <summary>
         /// Gets called before ExecuteTurn. This is where you get your bot's state.
@@ -44,6 +45,40 @@ namespace LHGames.Bot
         /// </summary>
         internal void AfterTurn()
         {
+
+
+        }
+
+        private Tuple<Point,TileContent> checkNextTile(Map map, Tile ressourceCible)
+        {
+            int posX = this.PlayerInfo.Position.X;
+            int posY = this.PlayerInfo.Position.Y;
+            if (Math.Abs(ressourceCible.Position.X - this.PlayerInfo.Position.X) != 0)
+            {
+                if(ressourceCible.Position.X - this.PlayerInfo.Position.X < 0)
+                {
+                    posX--;
+                }
+                else
+                {
+                    posX--;
+                }
+
+            }
+            else if(Math.Abs(ressourceCible.Position.Y - this.PlayerInfo.Position.Y) != 0)
+            {
+                if (ressourceCible.Position.Y - this.PlayerInfo.Position.Y < 0)
+                {
+                    posY--;
+                }
+                else
+                {
+                    posY++;
+                }
+            }
+            Tuple<Point, TileContent> tuple = new Tuple<Point, TileContent>(new Point(posX,posY), map.GetTileAt(posX, posY));
+
+            return tuple;
         }
     }
 }
