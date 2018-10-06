@@ -132,7 +132,12 @@ namespace LHGames.Bot
             int distanceDeLaMaisonCarre = TrouverDistanceEntreDeuxPoints(PlayerInfo.HouseLocation, PlayerInfo.Position);
             float facteurEloignement = ((float)PlayerInfo.CarriedResources / PlayerInfo.CarryingCapacity);
 
-            int distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[1].Position, PlayerInfo.Position);
+            int distanceEnnemy = 100;
+            if(playerTiles.Count > 0)
+            {
+                distanceEnnemy = TrouverDistanceEntreDeuxPoints(playerTiles[1].Position, PlayerInfo.Position);
+            }
+             
             if (listTitlePriority.Count == 0)
             {
                 listTitlePriority.Insert(0,TileContent.Resource);
