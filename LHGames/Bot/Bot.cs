@@ -21,7 +21,13 @@ namespace LHGames.Bot
             PlayerInfo = playerInfo;
         }
 
-        // TODO function recomputeDeltas
+        internal void fight(Tile obstacleTile) {
+            Point obstaclePosition = obstacleTile.Position;
+            while (obstacleTile.TileType != TileContent.Resource || 
+                obstacleTile.TileType != TileContent.Empty) {
+                AIHelper.CreateMeleeAttackAction(obstaclePosition);
+            }
+        }
 
         /// <summary>
         /// Implement your bot here.
