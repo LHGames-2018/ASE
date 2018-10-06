@@ -1,0 +1,189 @@
+{"frames": {
+
+"upgrade_bag_green_1.png":
+{
+	"frame": {"x":0,"y":0,"w":18,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":55},
+	"sourceSize": {"w":18,"h":55}
+},
+"upgrade_bag_green_2.png":
+{
+	"frame": {"x":18,"y":0,"w":18,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":55},
+	"sourceSize": {"w":18,"h":55}
+},
+"upgrade_bag_green_3.png":
+{
+	"frame": {"x":36,"y":0,"w":18,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":55},
+	"sourceSize": {"w":18,"h":55}
+},
+"upgrade_empty_green_1.png":
+{
+	"frame": {"x":0,"y":55,"w":18,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":23},
+	"sourceSize": {"w":18,"h":23}
+},
+"upgrade_empty_green_2.png":
+{
+	"frame": {"x":18,"y":55,"w":18,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":25},
+	"sourceSize": {"w":18,"h":25}
+},
+"upgrade_empty_green_3.png":
+{
+	"frame": {"x":36,"y":55,"w":18,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":23},
+	"sourceSize": {"w":18,"h":23}
+},
+"upgrade_heart_green_1.png":
+{
+	"frame": {"x":0,"y":80,"w":18,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+	"sourceSize": {"w":18,"h":51}
+},
+"upgrade_heart_green_2.png":
+{
+	"frame": {"x":18,"y":80,"w":18,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+	"sourceSize": {"w":18,"h":51}
+},
+"upgrade_heart_green_3.png":
+{
+	"frame": {"x":36,"y":80,"w":18,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+	"sourceSize": {"w":18,"h":51}
+},
+"upgrade_pickaxe_green_1.png":
+{
+	"frame": {"x":0,"y":131,"w":19,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":57},
+	"sourceSize": {"w":19,"h":57}
+},
+"upgrade_pickaxe_green_2.png":
+{
+	"frame": {"x":19,"y":131,"w":18,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":57},
+	"sourceSize": {"w":18,"h":57}
+},
+"upgrade_pickaxe_green_3.png":
+{
+	"frame": {"x":37,"y":131,"w":20,"h":57},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":57},
+	"sourceSize": {"w":20,"h":57}
+},
+"upgrade_potion_green_1.png":
+{
+	"frame": {"x":0,"y":188,"w":18,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":56},
+	"sourceSize": {"w":18,"h":56}
+},
+"upgrade_potion_green_2.png":
+{
+	"frame": {"x":18,"y":188,"w":18,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":56},
+	"sourceSize": {"w":18,"h":56}
+},
+"upgrade_potion_green_3.png":
+{
+	"frame": {"x":36,"y":188,"w":18,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":55},
+	"sourceSize": {"w":18,"h":55}
+},
+"upgrade_shield_green_1.png":
+{
+	"frame": {"x":0,"y":244,"w":18,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":53},
+	"sourceSize": {"w":18,"h":53}
+},
+"upgrade_shield_green_2.png":
+{
+	"frame": {"x":18,"y":244,"w":18,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":53},
+	"sourceSize": {"w":18,"h":53}
+},
+"upgrade_shield_green_3.png":
+{
+	"frame": {"x":36,"y":244,"w":18,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":53},
+	"sourceSize": {"w":18,"h":53}
+},
+"upgrade_sword_green_1.png":
+{
+	"frame": {"x":0,"y":297,"w":19,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":51},
+	"sourceSize": {"w":19,"h":51}
+},
+"upgrade_sword_green_2.png":
+{
+	"frame": {"x":19,"y":297,"w":19,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":19,"h":51},
+	"sourceSize": {"w":19,"h":51}
+},
+"upgrade_sword_green_3.png":
+{
+	"frame": {"x":38,"y":297,"w":18,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+	"sourceSize": {"w":18,"h":51}
+}},
+"animations": {
+	"upgrade_bag_green": ["upgrade_bag_green_1.png","upgrade_bag_green_2.png","upgrade_bag_green_3.png"],
+	"upgrade_empty_green": ["upgrade_empty_green_1.png","upgrade_empty_green_2.png","upgrade_empty_green_3.png"],
+	"upgrade_heart_green": ["upgrade_heart_green_1.png","upgrade_heart_green_2.png","upgrade_heart_green_3.png"],
+	"upgrade_pickaxe_green": ["upgrade_pickaxe_green_1.png","upgrade_pickaxe_green_2.png","upgrade_pickaxe_green_3.png"],
+	"upgrade_potion_green": ["upgrade_potion_green_1.png","upgrade_potion_green_2.png","upgrade_potion_green_3.png"],
+	"upgrade_shield_green": ["upgrade_shield_green_1.png","upgrade_shield_green_2.png","upgrade_shield_green_3.png"],
+	"upgrade_sword_green": ["upgrade_sword_green_1.png","upgrade_sword_green_2.png","upgrade_sword_green_3.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "../images/players/upgrade_green.png",
+	"format": "RGBA8888",
+	"size": {"w":57,"h":348},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:80d3e65b0e0c23594f5ab5e28a24f803:12e2c5bac972a9bf61ed08e78b62a6ab:59f49e9f4bd09761cda9d92fab42e55f$"
+}
+}
