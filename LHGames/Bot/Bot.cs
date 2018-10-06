@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using LHGames.Helper;
+using System.Linq;
 
 namespace LHGames.Bot
 {
@@ -40,17 +41,11 @@ namespace LHGames.Bot
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
+            string instruction = "";
             map.VisibleDistance = 20;
-            IEnumerable<Tile> visibleTiles = map.GetVisibleTiles();
-            IEnumerator<Tile> visibleTilesEnumerator = visibleTiles.GetEnumerator();
+            List<Tile> visibleTiles = map.GetVisibleTiles().ToList();
 
-            ArrayList ressourceTiles = new ArrayList();
-
-            while (visibleTilesEnumerator.MoveNext()) {
-                if (visibleTilesEnumerator.Current.TileType == TileContent.Resource) {
-                    ressourceTiles.Add(visibleTilesEnumerator.Current);
-                }
-            }
+            List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
 
             Point playerPosition = this.PlayerInfo.Position;
             int smallestDelta = int.MaxValue;
@@ -68,39 +63,15 @@ namespace LHGames.Bot
                     dyFromNearTile = dy;
                 }
 
-                while (dxFromNearTile > 1 || dyFromNearTile > 1) {
+                if (dxFromNearTile > 1 || dyFromNearTile > 1) {
                     // move to the ressource
+                    
                     // update deltas
                 }
 
             }
 
-            // Move to the ressource
-
-            string instruction = "";
-            if (horizontal != 4)
-            {
-                horizontal++;
-                instruction = AIHelper.CreateMoveAction(new Point(-1, 0));
-            }
-            /*
-            else
-            {
-                if (horizontal != 5)
-                {
-                    horizontal++;
-                    instruction = AIHelper.CreateMoveAction(new Point(1, 0));
-                }
-                else
-                {
-                    instruction = AIHelper.CreateCollectAction(new Point(1, 0));
-                }
-            }
-            */
-            if (map.GetTileAt(PlayerInfo.Position.X + _currentDirection, PlayerInfo.Position.Y) == TileContent.Wall)
-            {
-                _currentDirection *= -1;
-            }
+  
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
