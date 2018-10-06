@@ -30,12 +30,11 @@ namespace LHGames.Bot
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
-
-            while (vertical != 4)
+            string instruction = "";
+            if (vertical != 4)
             {
                 vertical++;
-                return AIHelper.CreateMoveAction(new Point(0, 1));
-
+                instruction = AIHelper.CreateMoveAction(new Point(0, 1));
             }
             if (map.GetTileAt(PlayerInfo.Position.X + _currentDirection, PlayerInfo.Position.Y) == TileContent.Wall)
             {
@@ -44,7 +43,7 @@ namespace LHGames.Bot
 
             var data = StorageHelper.Read<TestClass>("Test");
             Console.WriteLine(data?.Test);
-            return AIHelper.CreateCollectAction(new Point(1, 0));
+            return instruction;//AIHelper.CreateCollectAction(new Point(1, 0));
             //return AIHelper.CreateMoveAction(new Point(-1, 0));
         }
 
