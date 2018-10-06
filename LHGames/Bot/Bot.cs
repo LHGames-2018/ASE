@@ -34,6 +34,14 @@ namespace LHGames.Bot
         /// <returns>The action you wish to execute.</returns>
         static int vertical = 0;
         static int horizontal = 0;
+        public delegate int DistanceFromTiles(Point positionRessource, Point positionJoueur);
+
+        public int TrouverDistanceEntreDeuxPoints(Point positionRessource, Point positionJoueur)
+        {
+            int dx = Math.Abs(positionRessource.X - positionJoueur.X);
+            int dy = Math.Abs(positionRessource.Y - positionJoueur.Y);
+            return (int)(Math.Pow(dx, 2) + Math.Pow(dy, 2));
+        }
         internal string ExecuteTurn(Map map, IEnumerable<IPlayer> visiblePlayers)
         {
             // TODO: Implement your AI here.
@@ -43,7 +51,12 @@ namespace LHGames.Bot
 
             List<Tile> ressourceTiles = visibleTiles.Where(t => t.TileType == TileContent.Resource).ToList();
 
-            Point playerPosition = this.PlayerInfo.Position;
+            DistanceFromTiles dist = new DistanceFromTiles(TrouverDistanceEntreDeuxPoints);
+            ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
+
+            Tile closestResource = ressourceTiles[0];
+
+            /*
             int smallestDelta = int.MaxValue;
             Tile nearTile = null;
             int dxFromNearTile = 0, dyFromNearTile = 0;
@@ -65,7 +78,7 @@ namespace LHGames.Bot
                     // update deltas
                 }
 
-            }
+            }*/
 
   
 
