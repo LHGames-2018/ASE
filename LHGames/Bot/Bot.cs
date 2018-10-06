@@ -15,7 +15,8 @@ namespace LHGames.Bot
         private int _currentDirection = 1;
         internal Bot() { }
 
-        List<TileContent> listTitlePriority = new List<TileContent>();
+        List<TileContent> listTitlePriority = new List<TileContent>() { TileContent.Resource };
+
         /// <summary>
         /// Gets called before ExecuteTurn. This is where you get your bot's state.
         /// </summary>
@@ -58,9 +59,15 @@ namespace LHGames.Bot
             ressourceTiles = ressourceTiles.OrderBy(t => dist(t.Position, PlayerInfo.Position)).ToList();
 
             Tile closestResource = ressourceTiles[0];
-
-            Tuple<Point, TileContent> nextMove = checkNextTile(map, closestResource);
-
+            Tuple<Point, TileContent> nextMove = null;
+            if (listTitlePriority[0] == TileContent.House)
+            {
+                nextMove = checkNextTile(map, this.PlayerInfo.HouseLocation);
+            }
+            else {
+                nextMove = checkNextTile(map, closestResource.Position);
+            }
+            
             TileContent nextTitleContent = nextMove.Item2;
 
             if(nextMove.Item2 == TileContent.Resource)
@@ -111,14 +118,14 @@ namespace LHGames.Bot
         }
 
 
-        private Tuple<Point,TileContent> checkNextTile(Map map, Tile ressourceCible)
+        private Tuple<Point,TileContent> checkNextTile(Map map, Point ressourceCible)
         {
             int posX = this.PlayerInfo.Position.X;
             int posY = this.PlayerInfo.Position.Y;
 
-            if (Math.Abs(ressourceCible.Position.X - this.PlayerInfo.Position.X) != 0)
+            if (Math.Abs(ressourceCible.X - this.PlayerInfo.Position.X) != 0)
             {
-                if(ressourceCible.Position.X - this.PlayerInfo.Position.X < 0)
+                if(ressourceCible.X - this.PlayerInfo.Position.X < 0)
                 {
                     posX--;
                 }
@@ -128,9 +135,9 @@ namespace LHGames.Bot
                 }
 
             }
-            else if(Math.Abs(ressourceCible.Position.Y - this.PlayerInfo.Position.Y) != 0)
+            else if(Math.Abs(ressourceCible.Y - this.PlayerInfo.Position.Y) != 0)
             {
-                if (ressourceCible.Position.Y - this.PlayerInfo.Position.Y < 0)
+                if (ressourceCible.Y - this.PlayerInfo.Position.Y < 0)
                 {
                     posY--;
                 }
