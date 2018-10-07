@@ -125,10 +125,10 @@ namespace LHGames.Bot
 
             }
 
-            if (vertical < 8)
+            if (vertical < 20)
             {
                 vertical++;
-                instruction = AIHelper.CreateCollectAction(new Point(-1, 0));
+                instruction = AIHelper.CreateMoveAction(PlayerInfo.HouseLocation - this.PlayerInfo.Position);
             }
 
             var data = StorageHelper.Read<TestClass>("Test");
